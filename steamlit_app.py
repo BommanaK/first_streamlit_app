@@ -47,7 +47,7 @@ streamlit.write('The user entered ', fruit_choice)
 
 #function
 streamlit.header("The fruit Load list contains:")
-def get_fruit_load_list(this_fruit_choice):
+def get_fruit_load_list():
   with my_cux.cursor() as my_cur:
     my_cur.execute("SELECT * from fruit_load_list")
       return my_cur.fetchall()
